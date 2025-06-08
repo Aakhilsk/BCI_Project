@@ -1,0 +1,39 @@
+{
+    "sampling_rate": 512,
+    "buffer_size": 512,
+    "serial_port": "COM11",
+    "baud_rate": 115200,
+    "key_mappings": {
+        "0": {
+            "key": "space",
+            "duration": 2,
+            "description": "Jump action"
+        },
+        "1": {
+            "key": "w",
+            "duration": 2,
+            "description": "Move forward"
+        }
+    },
+    "filter_settings": {
+        "notch_freq": 50.0,
+        "notch_quality": 30.0,
+        "bandpass_low": 0.5,
+        "bandpass_high": 30.0,
+        "bandpass_order": 4
+    },
+    "feature_settings": {
+        "bands": {
+            "alpha": [8, 13],
+            "beta": [14, 30],
+            "theta": [4, 7],
+            "delta": [0.5, 3]
+        }
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "bci_prediction.log",
+        "max_size": 10485760,
+        "backup_count": 5
+    }
+} 
